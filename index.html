@@ -86,7 +86,7 @@
                 >
                     <span class="nav-icon">◉</span>
                     <span>Account Takeover</span>
-                    <span class="nav-status upcoming"></span>
+                    <span class="nav-status live"></span>
                 </button>
 
                 <button
@@ -95,7 +95,7 @@
                 >
                     <span class="nav-icon">◌</span>
                     <span>Digital Impersonation</span>
-                    <span class="nav-status upcoming"></span>
+                    <span class="nav-status live"></span>
                 </button>
 
             </div>
@@ -397,26 +397,6 @@
                     </div>
 
 
-                    <!-- Validation Benchmark -->
-
-                    <div class="panel benchmark-panel">
-                        <div class="panel-header">
-                            <div>
-                                <span class="panel-kicker">LOCAL VALIDATION</span>
-                                <h3>Detection Benchmark</h3>
-                            </div>
-                            <span class="panel-live">120 MESSAGE SET</span>
-                        </div>
-                        <div class="benchmark-grid">
-                            <div><span>PRECISION</span><strong>98.5%</strong></div>
-                            <div><span>RECALL</span><strong>82.5%</strong></div>
-                            <div><span>F1 SCORE</span><strong>89.8%</strong></div>
-                            <div><span>BENIGN HIGH</span><strong>0 / 20</strong></div>
-                        </div>
-                        <p class="benchmark-note">Digital Impersonation benchmark against the labelled 120-message evaluation set. Borderline cases are reported separately; these figures are local engineering validation results, not independent model certification.</p>
-                    </div>
-
-
                     <!-- Protection Engines -->
 
                     <div class="engine-stack">
@@ -513,6 +493,26 @@
                             <span class="summary-action">Analyse Messages →</span>
                         </div>
 
+                    </div>
+
+
+                    <!-- Validation Benchmark -->
+
+                    <div class="panel benchmark-panel">
+                        <div class="panel-header">
+                            <div>
+                                <span class="panel-kicker">DETECTION PERFORMANCE</span>
+                                <h3>Detection Benchmark</h3>
+                            </div>
+                            <span class="panel-live">120 MESSAGE SET</span>
+                        </div>
+                        <div class="benchmark-grid">
+                            <div><span>PRECISION</span><strong>98.5%</strong></div>
+                            <div><span>RECALL</span><strong>82.5%</strong></div>
+                            <div><span>F1 SCORE</span><strong>89.8%</strong></div>
+                            <div><span>BENIGN HIGH</span><strong>0 / 20</strong></div>
+                        </div>
+                        <p class="benchmark-note">Digital Impersonation benchmark against the labelled 120-message evaluation set. Borderline cases are reported separately; these figures are local engineering validation results, not independent model certification.</p>
                     </div>
 
 
