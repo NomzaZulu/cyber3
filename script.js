@@ -4086,8 +4086,12 @@ function renderIncidentCenter() {
     list.innerHTML = state.incidents.slice(0, 6).map(item => {
         const severity = String(item.severity || "UNKNOWN").toUpperCase();
         const cls = severity === "HIGH" ? "high" : severity === "MEDIUM" ? "medium" : "low";
+        const rawAttackType = String(item.attack_type || "").trim();
+        const attackType = /^(LOW|MEDIUM|HIGH)(\s+RISK)?$/i.test(rawAttackType)
+            ? "Recent Security Event"
+            : (rawAttackType || "Recent Security Event");
         return `<div class="unified-incident-row ${cls}">
-            <div><strong>${escapeHtml(item.attack_type || "Security Event")}</strong><span>${escapeHtml(item.module || "unknown")} · ${escapeHtml(item.incident_id || "")}</span></div>
+            <div><strong>${escapeHtml(attackType)}</strong><span>${escapeHtml(item.module || "unknown")} · ${escapeHtml(item.incident_id || "")}</span></div>
             <b>${escapeHtml(severity)}</b>
             <em>${escapeHtml(String(item.risk_score ?? 0))}</em>
         </div>`;
