@@ -4308,7 +4308,7 @@ body::after {
     border: 1px solid var(--border, #e2e8f0);
     border-radius: 12px;
     padding: 12px 14px;
-    background: var(--surface, #fff);
+    background: var(--panel-light, #111a27);
 }
 
 .unified-incident-stats span {
@@ -4322,6 +4322,7 @@ body::after {
     display: block;
     margin-top: 4px;
     font-size: 22px;
+    color: var(--text);
 }
 
 .unified-incident-list {
@@ -4448,9 +4449,10 @@ body::after {
 }
 
 .benchmark-grid > div {
-    border: 1px solid var(--border, #e2e8f0);
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 13px 14px;
+    background: var(--panel-light);
 }
 
 .benchmark-grid span {
