@@ -795,7 +795,7 @@ a {
     bottom: 14px;
 
     color: var(--blue-bright);
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
 
     transition: color 180ms ease, transform 180ms ease;
@@ -866,7 +866,7 @@ a {
 .summary-label {
     color: var(--text-muted);
 
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
 
     letter-spacing: 0.1em;
@@ -1338,7 +1338,7 @@ a {
 }
 
 .quick-action strong {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .quick-action small {
@@ -1346,15 +1346,23 @@ a {
 
     color: var(--text-muted);
 
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .quick-action .arrow {
     margin-left: auto;
 
-    color: #58667b;
+    color: var(--blue-bright);
 
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 180ms ease, color 180ms ease;
+}
+
+.quick-action:hover .arrow {
+    color: #93c5fd;
+    transform: translateX(3px);
 }
 
 
@@ -1541,7 +1549,7 @@ a {
 
     color: #77859a;
 
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
 
     letter-spacing: 0.11em;
@@ -1744,7 +1752,16 @@ a {
 .scan-arrow {
     margin-left: auto;
 
-    font-size: 15px;
+    color: var(--blue-bright);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 180ms ease, color 180ms ease;
+}
+
+.scan-button:hover .scan-arrow {
+    color: #93c5fd;
+    transform: translateX(4px);
 }
 
 
@@ -2209,13 +2226,17 @@ a {
     color: var(--blue-bright);
     background: rgba(59, 130, 246, 0.10);
     font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 .guidance-item.recommendation .guidance-icon {
     color: var(--green);
     background: rgba(34, 197, 94, 0.09);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.18);
 }
 
 .guidance-label {
@@ -2223,7 +2244,7 @@ a {
     margin-bottom: 4px;
     color: #718096;
     font-family: "JetBrains Mono", monospace;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 700;
     letter-spacing: 0.11em;
 }
@@ -2995,8 +3016,10 @@ a {
 }
 
 .new-analysis-arrow {
-    color: var(--text-muted);
-    font-size: 16px;
+    color: var(--blue-bright);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
     transition: transform var(--transition), color var(--transition);
 }
 
@@ -4085,7 +4108,7 @@ body::after {
 .engine-stack-count {
     color: var(--green);
     font-family: "JetBrains Mono", monospace;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 700;
     letter-spacing: 0.06em;
     white-space: nowrap;
